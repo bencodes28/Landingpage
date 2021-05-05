@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Starbucks Page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <section>
+        <div class="circle"></div>
+        <header>
+            <a href="#" class="logo"><img src="simages/logo.png"></a>
+
+            <ul>
+                <li> <a href="#">Home</a></li>
+                <li> <a href="#">Menu</a></li>
+                <li> <a href="#">What's New</a></li>
+                <li> <a href="#">Contact</a></li>
+
+                </li>
+            </ul>
+        </header>
+        <div class="content">
+            <div class="textBox">
+                <h2>It is not just Coffee<br> It is <span>Starbucks coffee</span></span> </h2>
+                <p> This is a great consideration of a certain taste for the starbucks coffee.</p>
+                <a href="#">Learn More</a>
+            </div>
+            <div class="imgBox">
+                <img src="simages/img1.png" class="starbucks">
+
+            </div>
+        </div>
+        <ul class="thumb">
+            <li> <img src="simages/thumb1.png" onclick="imgSlider('simages/img1.png');changeCirc('#017143');changespan('#017143')"> </li>
+            <li> <img src="simages/thumb2.png" onclick="imgSlider('simages/img2.png');changeCirc('#eb7495');changespan('#eb7495')"> </li>
+            <li> <img src="simages/thumb3.png" onclick="imgSlider('simages/img3.png');changeCirc('#d752b1');changespan('#d752b1')"> </li>
+            
+        </ul>
+        <ul class="sci">
+            <li><a href="#"><img src="simages/facebook.png"></a></li>
+            <li><a href="#"><img src="simages/twitter.png"></a></li>
+            <li><a href="#"><img src="simages/instagram.png"></a></li>
+
+        </ul>
+    </section>
+    <script type="text/javascript">
+    function imgSlider(any){
+        document.querySelector('.starbucks').src=any;
+    }
+    function changeCirc(color){
+        const circle = document.querySelector('.circle');
+        circle.style.background=color;
+    }
+    function changespan(x){
+        document.querySelector('.span');
+        span.style.color;
+    }
+
+    </script>
+</body>
+</html>
